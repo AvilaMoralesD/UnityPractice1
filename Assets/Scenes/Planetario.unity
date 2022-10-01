@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0041284934, g: 0.0041052303, b: 0.017651094, a: 1}
+  m_IndirectSpecularColor: {r: 0.00411939, g: 0.0040880805, b: 0.017726487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34461144}
   m_Layer: 0
-  m_Name: Orbita Tierra
+  m_Name: OrbitaTierra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ Transform:
   m_Children:
   - {fileID: 1223528107}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92409547
 GameObject:
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92409548}
   m_Layer: 0
-  m_Name: Orbita Venus
+  m_Name: OrbitaVenus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,8 +184,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 558950084}
-  m_Father: {fileID: 147043372}
-  m_RootOrder: 1
+  m_Father: {fileID: 809047954}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &147043371
 GameObject:
@@ -216,7 +216,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 344275729}
-  - {fileID: 92409548}
   m_Father: {fileID: 809047954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -230,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158665598}
   m_Layer: 0
-  m_Name: Orbita Marte
+  m_Name: OrbitaMarte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +249,7 @@ Transform:
   m_Children:
   - {fileID: 2000514299}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &183939876
 GameObject:
@@ -637,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605233960}
   m_Layer: 0
-  m_Name: Orbita Neptuno
+  m_Name: OrbitaNeptuno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,7 +656,7 @@ Transform:
   m_Children:
   - {fileID: 1257621551}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &787843643
 GameObject:
@@ -786,6 +785,7 @@ Transform:
   m_Children:
   - {fileID: 1248168869}
   - {fileID: 147043372}
+  - {fileID: 92409548}
   - {fileID: 34461144}
   - {fileID: 158665598}
   - {fileID: 885132506}
@@ -805,7 +805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 885132506}
   m_Layer: 0
-  m_Name: Orbita Jupiter
+  m_Name: OrbitaJupiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,7 +825,7 @@ Transform:
   m_Children:
   - {fileID: 1973126193}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949382312
 GameObject:
@@ -837,7 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949382313}
   m_Layer: 0
-  m_Name: Orbita Urano
+  m_Name: OrbitaUrano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,7 +857,7 @@ Transform:
   m_Children:
   - {fileID: 183939880}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069206991
 GameObject:
@@ -967,7 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110248167}
   m_Layer: 0
-  m_Name: Orbita Saturno
+  m_Name: OrbitaSaturno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,7 +987,7 @@ Transform:
   m_Children:
   - {fileID: 1069206995}
   m_Father: {fileID: 809047954}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1141400194
 GameObject:
@@ -1042,7 +1042,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f993fe114ab8464894ed786ce9f3fe0, type: 2}
+  - {fileID: 2100000, guid: 2f8c3550bc881bf4bb7f429335df1d20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1237,7 +1237,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a17bec4403778248b3b5ccfbb5d1850, type: 2}
+  - {fileID: 2100000, guid: 755a12b982a4258478540cc574435bf3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 1300506420}
   - component: {fileID: 1300506419}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: PointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,11 +1405,11 @@ Light:
   m_GameObject: {fileID: 1300506418}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 10000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

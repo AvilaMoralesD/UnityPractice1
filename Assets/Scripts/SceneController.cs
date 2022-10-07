@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
-    private int totalTranscurrido = 0;
-    private float fraccionSegundo = 0f;
+    public int totalTranscurrido = 0;
+    public float fraccionSegundo = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class SceneController : MonoBehaviour
         if ((fraccionSegundo += Time.deltaTime) >= 1)
         {
             Debug.Log(++totalTranscurrido);
-            fraccionSegundo-=1;
+            fraccionSegundo -= 1;
         }
 
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0041284934, g: 0.0041052303, b: 0.017651094, a: 1}
+  m_IndirectSpecularColor: {r: 0.00411939, g: 0.0040880805, b: 0.017726487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 34461144}
+  - component: {fileID: 34461145}
   m_Layer: 0
   m_Name: OrbitaTierra
   m_TagString: Untagged
@@ -155,6 +156,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34461145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34461143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 42
 --- !u!1 &92409547
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92409548}
+  - component: {fileID: 92409549}
   m_Layer: 0
   m_Name: OrbitaVenus
   m_TagString: Untagged
@@ -187,6 +202,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92409549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92409547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 46.3
 --- !u!1 &147043371
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147043372}
+  - component: {fileID: 147043373}
   m_Layer: 0
   m_Name: OrbitaMercurio
   m_TagString: Untagged
@@ -219,6 +248,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &147043373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147043371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 50
 --- !u!1 &158665597
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 158665598}
+  - component: {fileID: 158665599}
   m_Layer: 0
   m_Name: OrbitaMarte
   m_TagString: Untagged
@@ -251,6 +294,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158665599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158665597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 34
 --- !u!1 &183939876
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +455,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30
+  field of view: 110
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -424,14 +480,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301462211}
-  m_LocalRotation: {x: 0.03489949, y: 0, z: 0, w: 0.99939084}
-  m_LocalPosition: {x: 0, y: 50, z: -690}
+  m_LocalRotation: {x: 0.5798666, y: -0, z: -0, w: 0.81471145}
+  m_LocalPosition: {x: 5.1857567, y: 185, z: -58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 4, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 70.882, y: 0, z: 0}
 --- !u!1 &344275728
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605233960}
+  - component: {fileID: 605233961}
   m_Layer: 0
   m_Name: OrbitaNeptuno
   m_TagString: Untagged
@@ -658,6 +715,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605233961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605233959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 15
 --- !u!1 &787843643
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,11 +818,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787843643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0799989, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: -5.399994, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1223528107}
+  m_Father: {fileID: 906186114}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809047953
@@ -804,6 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885132506}
+  - component: {fileID: 885132507}
   m_Layer: 0
   m_Name: OrbitaJupiter
   m_TagString: Untagged
@@ -827,6 +898,65 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885132507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885132505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 29
+--- !u!1 &906186113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 906186114}
+  - component: {fileID: 906186115}
+  m_Layer: 0
+  m_Name: OrbitaLuna
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906186114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906186113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 787843647}
+  m_Father: {fileID: 1223528107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906186115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906186113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 200
 --- !u!1 &949382312
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 949382313}
+  - component: {fileID: 949382314}
   m_Layer: 0
   m_Name: OrbitaUrano
   m_TagString: Untagged
@@ -859,6 +990,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949382314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949382312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 17
 --- !u!1 &1069206991
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1110248167}
+  - component: {fileID: 1110248168}
   m_Layer: 0
   m_Name: OrbitaSaturno
   m_TagString: Untagged
@@ -989,6 +1134,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1110248168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110248166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 22
 --- !u!1 &1141400194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f993fe114ab8464894ed786ce9f3fe0, type: 2}
+  - {fileID: 2100000, guid: 2f8c3550bc881bf4bb7f429335df1d20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1181,7 +1339,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 787843647}
+  - {fileID: 906186114}
   m_Father: {fileID: 34461144}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1197,6 +1355,7 @@ GameObject:
   - component: {fileID: 1248168868}
   - component: {fileID: 1248168867}
   - component: {fileID: 1248168866}
+  - component: {fileID: 1248168870}
   m_Layer: 0
   m_Name: Sol
   m_TagString: Untagged
@@ -1237,7 +1396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a17bec4403778248b3b5ccfbb5d1850, type: 2}
+  - {fileID: 2100000, guid: 755a12b982a4258478540cc574435bf3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1282,6 +1441,19 @@ Transform:
   m_Father: {fileID: 809047954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248168870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248168864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59039339ebfe64e4ab6cb4f38a4b337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularVelocity: 20
 --- !u!1 &1257621547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1752,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1980342347}
   - component: {fileID: 1980342346}
-  - component: {fileID: 1980342348}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -1600,6 +1771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe19098190c369419db5a0941b39b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalTranscurrido: 0
+  fraccionSegundo: 0
 --- !u!4 &1980342347
 Transform:
   m_ObjectHideFlags: 0
@@ -1615,19 +1788,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1980342348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980342345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2f987f44f976a4d8082192f3b47d11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Sol: {fileID: 1248168864}
 --- !u!1 &2000514295
 GameObject:
   m_ObjectHideFlags: 0

@@ -67,13 +67,13 @@ public class RotadorCabeza : MonoBehaviour
         }
     }
 
-        CabezaControl getControlData()
+    CabezaControl getControlData()
     {
         CabezaControl c = new CabezaControl();
 
         c.posicionCabeza = transform.position;
         c.posicionCuerpo = transform.parent.position;
-        c.posicionObjetivo = target.transform.position;
+        c.posicionObjetivo = target.transform.position + Vector3.up * 1.5f;
 
         c.direccionCuerpo = transform.parent.forward;
         c.direccionCabeza = transform.forward;

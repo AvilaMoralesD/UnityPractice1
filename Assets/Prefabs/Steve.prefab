@@ -123,7 +123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714314688944301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.29, z: 0}
   m_LocalScale: {x: 1, y: 1.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714314733362499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.62, z: 0}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -303,7 +303,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.24, z: 0}
+  m_Center: {x: 0, y: 2.1, z: 0}
 --- !u!136 &9132345748228164479
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -317,7 +317,7 @@ CapsuleCollider:
   m_Radius: 0.99
   m_Height: 4.21
   m_Direction: 1
-  m_Center: {x: 0, y: -0.24, z: 0}
+  m_Center: {x: 0, y: 2.1, z: 0}
 --- !u!1 &2222714314759552487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714315324016827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 3.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1373,7 +1373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2222714315358796972}
-  - component: {fileID: 2222714315358796973}
+  - component: {fileID: 4713594872350410362}
   m_Layer: 0
   m_Name: CaderaIzq
   m_TagString: Untagged
@@ -1389,7 +1389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714315358796963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -0.75, z: 0}
+  m_LocalPosition: {x: -0.25, y: 1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1397,7 +1397,7 @@ Transform:
   m_Father: {fileID: 2222714314733362508}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2222714315358796973
+--- !u!114 &4713594872350410362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1406,11 +1406,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2222714315358796963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b194c1bbbcf58af4a81386e73d28df2f, type: 3}
+  m_Script: {fileID: 11500000, guid: d745294d8db48434e8af2d642b8749b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activo: 0
   dir: -1
-  modoRotacion: 0
 --- !u!1 &2222714315369375131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,7 +2059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2222714315542655988}
-  - component: {fileID: 2222714315542655989}
+  - component: {fileID: 1586432090631653758}
   m_Layer: 0
   m_Name: HombroIzq
   m_TagString: Untagged
@@ -2074,8 +2074,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714315542655947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0.75, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 3.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2083,7 +2083,7 @@ Transform:
   m_Father: {fileID: 2222714314733362508}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2222714315542655989
+--- !u!114 &1586432090631653758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2092,11 +2092,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2222714315542655947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b194c1bbbcf58af4a81386e73d28df2f, type: 3}
+  m_Script: {fileID: 11500000, guid: d745294d8db48434e8af2d642b8749b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activo: 0
   dir: 1
-  modoRotacion: 0
 --- !u!1 &2222714315578751446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,7 +2894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2222714316051075532}
-  - component: {fileID: 2222714316051075533}
+  - component: {fileID: 685300611465713759}
   m_Layer: 0
   m_Name: HombroDer
   m_TagString: Untagged
@@ -2909,8 +2909,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714316051075523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.75, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 3.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2918,7 +2918,7 @@ Transform:
   m_Father: {fileID: 2222714314733362508}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2222714316051075533
+--- !u!114 &685300611465713759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2927,11 +2927,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2222714316051075523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b194c1bbbcf58af4a81386e73d28df2f, type: 3}
+  m_Script: {fileID: 11500000, guid: d745294d8db48434e8af2d642b8749b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activo: 0
   dir: -1
-  modoRotacion: 0
 --- !u!1 &2222714316059840497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,7 +3039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2222714316258724909}
-  - component: {fileID: 2222714316258724910}
+  - component: {fileID: 1295051046819038992}
   m_Layer: 0
   m_Name: CaderaDer
   m_TagString: Untagged
@@ -3055,7 +3055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2222714316258724908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: -0.75, z: 0}
+  m_LocalPosition: {x: 0.25, y: 1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3063,7 +3063,7 @@ Transform:
   m_Father: {fileID: 2222714314733362508}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2222714316258724910
+--- !u!114 &1295051046819038992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3072,11 +3072,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2222714316258724908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b194c1bbbcf58af4a81386e73d28df2f, type: 3}
+  m_Script: {fileID: 11500000, guid: d745294d8db48434e8af2d642b8749b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activo: 0
   dir: 1
-  modoRotacion: 0
 --- !u!1 &2222714316265904289
 GameObject:
   m_ObjectHideFlags: 0

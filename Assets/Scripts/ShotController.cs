@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ShotController : MonoBehaviour
 {
+    [SerializeField] GameObject bullet;
     [SerializeField] GameObject shotCrack; //Meter a mano desde fuera del código el prefab aquí
     [SerializeField][Range(0.1f, 10)] float fadeTime = 2f; // Este parámetro se debe poder configurar desde el editor, hazlo
 
@@ -23,7 +24,11 @@ public class ShotController : MonoBehaviour
 
     private IEnumerator PlaceShotMark(RaycastHit hit)
     {
-        GameObject shotMark = Instantiate(shotCrack) as GameObject;
+        GameObject bulletInstance = Instantiate(bullet);
+        bulletInstance.transform.LookAt( hit.point - bulletInstance.transform.position);
+        while (Vector3.Distance(bulletInstance.transform.position, hit.point) > 0.005)
+        {bulletInstance.transform.position=bulletInstance.transform.forward*Time.deltaTime;}
+            GameObject shotMark = Instantiate(shotCrack);
         shotMark.transform.position = hit.point + hit.normal * 0.01f;
         shotMark.transform.LookAt(hit.point - hit.normal);
         shotMark.transform.SetParent(hit.transform, true);

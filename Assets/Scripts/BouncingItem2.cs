@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BouncingItem : MonoBehaviour
+public class BouncingItem2 : MonoBehaviour
 {
     [SerializeField][Range(0.01f, 1)] float amplitud = 0.25f;
     [SerializeField][Range(0.1f, 5f)] float tiempoMovimiento = 1f;
@@ -10,7 +10,7 @@ public class BouncingItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LerpBounce());
+        StartCoroutine(SmoothDampBounce());
     }
 
     // Update is called once per frame
@@ -18,29 +18,22 @@ public class BouncingItem : MonoBehaviour
     {
         transform.eulerAngles += Vector3.up * velGiro * Time.deltaTime;
     }
-    private IEnumerator LerpBounce()
+    private IEnumerator SmoothDampBounce()
     {
         int direccion = 1;
-        float tiempoUsado = tiempoMovimiento / 2 - Time.deltaTime;
+        Vector3 vel = Vector3.zero;
         Vector3 posInferior = transform.position - Vector3.up * amplitud;
         Vector3 posSuperior = posInferior + 2 * Vector3.up * amplitud;
-        Vector3 posInicio = posInferior;
-        Vector3 posFinal = posSuperior;
         while (true)
         {
-            if (tiempoUsado > tiempoMovimiento)
-            {
-                posInicio = direccion == 1 ? posInferior : posSuperior;
-                posFinal = direccion == 1 ? posSuperior : posInferior;
-                transform.position = posFinal;
+            Vector3 objetivo = direccion == 1 ? posSuperior : posInferior;
+            transform.position = Vector3.SmoothDamp(transform.position, objetivo, ref vel, tiempoMovimiento);
+            if (Vector3.Distance(transform.position, objetivo) < 0.05f){
                 direccion *= -1;
-                tiempoUsado = 0;
             }
-            tiempoUsado += Time.deltaTime;
-            transform.position = Vector3.Lerp(posInicio, posFinal, tiempoUsado / tiempoMovimiento);
-
             yield return null;
         }
 
     }
 }
+

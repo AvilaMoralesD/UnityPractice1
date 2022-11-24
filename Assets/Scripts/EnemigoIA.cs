@@ -1,10 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemigoIA : MonoBehaviour
 {
-    enum EstadoEnemigo { Parado = 0, Andando = 1 }
+    public enum EstadoEnemigo { Parado = 0, Andando = 1 }
     private string[] extrem;
-    private EstadoEnemigo estEnem = EstadoEnemigo.Andando;
+    public EstadoEnemigo estEnem = EstadoEnemigo.Parado;
     private RotadorExtremidades[] rotadores;
     private CharacterController characterController;
     [Range(5, 20)]

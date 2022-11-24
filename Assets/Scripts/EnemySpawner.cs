@@ -4,39 +4,48 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [Range(1,1000)]
-    public int maxSpawned = 5;
-    [Range(0.5f,2*60f)]
-    public float secondsBetweenSpawns = 2;
-    private int numSpawned = 0;
+    [SerializeField][Range(1, 1000)] int maxSpawned = 5;
+    [SerializeField][Range(0.5f, 2 * 60f)] float tiempoEntreSpawns = 10;
+    [SerializeField][Range(0.5f, 5f)] float tiempoAnimacion = 3;
+    [SerializeField][Range(0f, 5f)] float timepoEsperaIA = 1f;
     public GameObject spawnableObject;
-    void Start()
+    void Start() { StartCoroutine(SpawnEnemies()); }
+    void Update(){transform.eulerAngles+=Vector3.up*14*Time.deltaTime; }
+    private IEnumerator SpawnEnemies()
     {
-        StartCoroutine(SpawnEnemyV2());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        int numSpawned = 0;
+        while (maxSpawned >= ++numSpawned)
+        {
+            StartCoroutine(SpawnEnemyV2());
+            yield return new WaitForSeconds(tiempoEntreSpawns);
+        }
     }
     private IEnumerator SpawnEnemyV2()
     {
-        GameObject spawnedObject = GameObject.Instantiate(spawnableObject);
-        spawnedObject.transform.eulerAngles = Vector3.up * Random.Range(0, 360);
-        spawnableObject.transform.position = transform.position - Vector3.up*getMaxHeight(spawnedObject);
-        
-        yield return new WaitForSeconds(1);
-
-    }
-    private IEnumerator SpawnEnemies()
-    {
-        while (maxSpawned >= numSpawned)
+        GameObject spawnedObject = spawnedObject = GameObject.Instantiate(spawnableObject); //Creación
+        Gravedad scriptGravedad = spawnedObject.GetComponent<Gravedad>();
+        EnemigoIA scriptIA = spawnedObject.GetComponent<EnemigoIA>();
+        CharacterController characterController = spawnedObject.GetComponent<CharacterController>();
+        scriptIA.enabled = false;
+        characterController.enabled = false;
+        scriptGravedad.enabled = false;
+        Vector3 rotacionInicial = spawnedObject.transform.eulerAngles = Vector3.up * Random.Range(0, 360); //Rotación inicial
+        float alturaObjeto = getMaxHeight(spawnedObject);
+        Vector3 alturaInicio = spawnableObject.transform.position = transform.position - Vector3.up * alturaObjeto;
+        Vector3 alturaObjetivo = alturaInicio + Vector3.up * alturaObjeto;
+        for (float tiempoTranscurrido = -Time.deltaTime; tiempoTranscurrido < tiempoAnimacion; tiempoTranscurrido+=Time.deltaTime)
         {
-            GameObject spawnedObject = GameObject.Instantiate(spawnableObject);
-            spawnedObject.transform.Translate(Vector3.forward);
-            yield return new WaitForSeconds(10.4f);
+            if (tiempoTranscurrido > tiempoAnimacion)
+                tiempoTranscurrido = tiempoAnimacion; //Para que no se pase nada de la posición final
+            float fraccionTiempo = tiempoTranscurrido / tiempoAnimacion;
+            spawnedObject.transform.position = Vector3.Lerp(alturaInicio, alturaObjetivo, fraccionTiempo);
+            spawnedObject.transform.eulerAngles = Vector3.Lerp(rotacionInicial, rotacionInicial - Vector3.up * 720, fraccionTiempo);
+            yield return null;
         }
+        yield return new WaitForSeconds(timepoEsperaIA);
+        scriptIA.enabled = true;
+        characterController.enabled = true;
+        scriptGravedad.enabled = true;
     }
     float getMaxHeight(GameObject parent)
     {

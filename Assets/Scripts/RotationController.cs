@@ -18,7 +18,16 @@ public class RotationController : MonoBehaviour
         {
             bloqueoCamara = !bloqueoCamara;
             if (bloqueoCamara == false)
+            {
                 ignorarLectura = true; //Si se desbloquea quiero que ignore el primer frame otra vez
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true; ;
+            }
         }
         if (ignorarLectura)
         {
